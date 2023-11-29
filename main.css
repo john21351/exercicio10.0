@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+
+}
+
+input {
+    margin: 7px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    resize: vertical;
+}
+
+form {
+    display: flex;
+    width: 550px;
+    margin-left: 400px;
+}
+
+input[type=submit] {
+    background-color: #45a049;
+    cursor: pointer;
+}
+
+input[type=reset] {
+    background-color: #f33b3b;
+    cursor: pointer;
+}

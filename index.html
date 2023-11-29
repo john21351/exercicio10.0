@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+<section id="tamanho">
+    <h2>Cadastro</h2>
+    <fieldset>
+    <form>
+        <div id="Nome">
+        <label for="seu-nome">Nome Completo</label>
+        <input type="text" name="name" id="seu-nome">
+        </div>
+
+        <div id="seu-email">
+        <label for="email">Email </label>
+        <input type="email" name="email" id="email">
+        </div>
+
+        <div id="telefone">
+        <label for="seu-telefone">Telefone</label>
+        <input type="tel" name="tel" id="seu-telefone">
+        </div>
+
+        <div id="CPF">
+        <label for="seu-cpf">CPF</label>
+        <input type="text" name="cpf" id="seu-cpf">
+        </div>
+
+        <div id="endereco">
+        <label for="seu-endereco">Endereço</label>
+        <input type="text" name="local" id="seu-endereco">
+        </div>
+
+        <div id="cep">
+            <label for="seu-cep">CEP</label>
+            <input type="text" name="cep" id="seu-cep">
+        </div>
+        <div id="botao">
+            <input type="submit" name="Enviar" value="Enviar">
+            <input type="reset" name="Limpar" value="Limpar">
+        </div>
+    </form>
+    </fieldset>
+</section>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./js/jquery.mask.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#seu-telefone').mask('(00) 00000-00000');
+        $('#seu-cpf').mask('000.000.000-00');
+        $('#seu-cep').mask('00000-000', {reverse: true});
+    })
+</script>
+
+
+</body>
+
+</html>
